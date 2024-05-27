@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    background-color: #4CAF50; /* Cor verde */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 20px; /* Espaçamento entre a logo e o cabeçalho */
+}
+
+.header-title {
+    color: #fff; /* Cor branca */
+    margin: 0; /* Remove margem padrão */
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    width: 90%; /* Ajuste para ocupar a largura total em dispositivos móveis */
+    margin: 20px auto 0; /* Centraliza horizontalmente e move a imagem para baixo */
+    text-align: center;
+    border: 2px solid #4CAF50; /* Cor da moldura verde */
+    border-radius: 5px; /* Borda arredondada */
+    overflow: hidden; /* Para esconder a borda que ultrapassa a imagem */
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Centraliza a imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+.text-box {
+    width: 90%; /* Ajuste para ocupar a largura total em dispositivos móveis */
+    text-align: center;
+}
+
+/* Estilos para o texto destacado */
+.text-box p {
+    color: #4CAF50; /* Cor verde */
+    font-size: 30px; /* Tamanho da fonte reduzido para dispositivos móveis */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 10px; /* Move o texto para cima */
+}
+
+footer {
+    background-color: #4CAF50; /* Cor verde */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 600px) {
+    /* Ajustes para telas maiores que 600px */
+    .image-box, .text-box {
+        width: 70%;
+    }
+}
